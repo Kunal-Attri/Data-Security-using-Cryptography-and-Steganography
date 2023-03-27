@@ -1,0 +1,7 @@
+rsa~=4.9
+numpy~=1.24.2
+imageio~=2.27.0
+multipledispatch~=0.6.0
+Pillow~=9.4.0
+pyDes~=2.0.1
+opencv-python~=4.7.0.72
