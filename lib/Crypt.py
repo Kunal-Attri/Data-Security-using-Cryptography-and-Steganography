@@ -30,7 +30,7 @@ class Crypt:
     def encrypt(self, message, key):
         message = self.pad(message)
         iv = Random.new().read(AES.block_size)
-        cipher = AES.new(key, AES.MODE_CBC, iv)
+        cipher = AES.new(key.encode('utf8'), AES.MODE_CBC, iv)
         return iv + cipher.encrypt(message)
 
     def encrypt_rsa(self, message, pubkey='lib/output/public.pem'):
